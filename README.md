@@ -6,7 +6,7 @@ Prometheus_net v.1.3.5 (Because I dev this proj on VS2015)
 
 # Import Step:
 1. Nuget import package Prometheus_net as description above.
-2. Download ```javascript \Prometheus ``` to the root folder of your project 
+2. Download ``` \Prometheus ``` to the root folder of your project 
 3. Edit web.config / Main web-config by adding
    
    3.1 Add Prometheus Module to httpModule : adding below code between 'configuration -> system.web -> httpModules' outline 
