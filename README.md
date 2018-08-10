@@ -12,8 +12,8 @@ Prometheus_net v.1.3.5 (Because I dev this proj on VS2015)
    configSections>
     <section name="PromSet"
          type="System.Configuration.DictionarySectionHandler"/>
-  </configSections>
-  <PromSet configSource ="Prometheus\Prom.config" />
+   </configSections>
+   <PromSet configSource ="Prometheus\Prom.config" />
    ```
    3.2 Add reference to Prometheus Config
    
