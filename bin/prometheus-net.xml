@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>prometheus-net</name>
+    </assembly>
+    <members>
+        <member name="T:Prometheus.Advanced.DotNetStatsCollector">
+            <summary>
+            Collects metrics on .net without performance counters
+            </summary>
+        </member>
+        <member name="T:Prometheus.Advanced.PerfCounterCollector">
+            <summary>
+            Collects metrics on standard Performance Counters
+            </summary>
+        </member>
+        <member name="M:Prometheus.Summary.Child.Observe(System.Double,System.DateTime)">
+            <summary>
+            For unit tests only
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,6 @@
+hostname: localhost
+port: 20425
+path: metrics
+auth: basic
+basic_id: admin
+basic_password: d0ppe1
