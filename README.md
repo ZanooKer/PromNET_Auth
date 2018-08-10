@@ -1,4 +1,5 @@
 # PromNET_Auth
+(Available only Basic Authentication: Ongoing with SSL)
 
 # Requirement:
 Prometheus_net v.1.3.5 (Because I dev this proj on VS2015)
@@ -8,14 +9,13 @@ Prometheus_net v.1.3.5 (Because I dev this proj on VS2015)
 2. Download Prometheus folder to root folder of the project 
 3. Edit web.config / Main web-config by adding
    
-   3.1 Add Prometheus Module to httpModule : adding below code between 'configuration' outline
-      adding below code between 'system.web -> httpModules' outline 
+   3.1 Add Prometheus Module to httpModule : adding below code between 'configuration -> system.web -> httpModules' outline 
    
    ```javascript
    <add name="prometheusMod" type="Prometheus.Custom.PrometheusModule" />
    ```
    
-   also adding this between 'system.webServer -> modules' outline to run this module with IIS7.0
+   also adding this between 'configuration -> system.webServer -> modules' outline to run this module with IIS7.0
    
    ```javascript
    <remove name="prometheusMod" />
