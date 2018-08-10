@@ -10,6 +10,7 @@ using System.Net;
 using System.Configuration;
 using System.Collections;
 using System.Web.Configuration;
+using System.Threading;
 
 namespace Prometheus.Custom
 {
@@ -103,6 +104,7 @@ namespace Prometheus.Custom
                         url: metricsPath);
                 }
                 server.Start();
+                PrometheusModule.StartAllThread();
                 initialPort = true;
             }
         }
