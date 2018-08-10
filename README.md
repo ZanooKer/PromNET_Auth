@@ -11,16 +11,16 @@ Prometheus_net v.1.3.5 (Because I dev this proj on VS2015)
    3.1 Add Prometheus Module to httpModule : adding below code between 'configuration' outline
       adding below code between 'system.web -> httpModules' outline 
    
-   ``javascript
+   ```javascript
    <add name="prometheusMod" type="Prometheus.Custom.PrometheusModule" />
-   ``
+   ```
    
    also adding this between 'system.webServer -> modules' outline to run this module with IIS7.0
    
-   ``javascript
+   ```javascript
    <remove name="prometheusMod" />
    <add name="prometheusMod" type="Prometheus.Custom.PrometheusModule" />
-   ``
+   ```
 
    3.2 Add reference to Prometheus Config : adding below code between 'configuration' outline
    
