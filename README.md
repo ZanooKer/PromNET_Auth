@@ -7,7 +7,7 @@ Prometheus_net v.1.3.5 (Because I dev this proj on VS2015)
 # Import Step:
 ### 1. Nuget import package Prometheus_net as description above.
 ### 2. Download ``` \Prometheus ``` to the root folder of your project 
-### 3. Edit web.config / Main web-config by adding
+### 3. Edit web.config (Main web-config)
    
    3.1 Add Prometheus Module to httpModule : adding below code between 'configuration -> system.web -> httpModules' outline 
    
@@ -32,11 +32,11 @@ Prometheus_net v.1.3.5 (Because I dev this proj on VS2015)
    <PromSet configSource ="Prometheus\Prom.config" />
    ```
    
-4. In Global.asax.cs, Add "PromServer.Instance.Init()" in Application_Start function.
+### 4. In Global.asax.cs, Add "PromServer.Instance.Init()" in Application_Start function.
    
    (PromServer's full name : Prometheus.Custom.Promserver)
 
 # Editing to your likes!
-1. Change your prometheus server's setting : Editing only at Prometheus/Prom.config
-2. Change metrics to sent on prometheus server : Editing the field in Prometheus/PrometheusModule.cs
+### 1. Change your prometheus server's setting : Editing only at Prometheus/Prom.config
+### 2. Change metrics to sent on prometheus server : Editing the field in Prometheus/PrometheusModule.cs
    
