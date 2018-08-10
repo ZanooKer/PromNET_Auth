@@ -66,7 +66,7 @@ namespace Prometheus.Custom
         public MetricsCustomServer(int port, string basic_id, string basic_pwd, string hostname = "localhost", string url = "metrics/", ICollectorRegistry registry = null, bool useHttps = false) : 
             this(port,hostname:hostname,url: url,registry: registry,useHttps: useHttps)
         {
-            authMode = "Basic";
+            authMode = "basic";
             iCECREAMdONUT = basic_id;
             pOwERdOG = basic_pwd;
             _httpListener.AuthenticationSchemes = AuthenticationSchemes.Basic;
@@ -147,7 +147,7 @@ namespace Prometheus.Custom
 
         private bool CheckAuthenticate(HttpListenerContext context)
         {
-            if (authMode == "Basic")
+            if (authMode == "basic")
             {
                 var header = (HttpListenerBasicIdentity)context.User.Identity;
                 var id = header.Name;

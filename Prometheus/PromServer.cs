@@ -59,6 +59,7 @@ namespace Prometheus.Custom
             instance.hostname = dictionary["hostname"];
             instance.port = int.Parse(dictionary["port"]);
             instance.metricsPath = dictionary["path"];
+            authCont.Clear();
             if (dictionary["authType"].Equals("none")) return;
             if (dictionary["authType"].Equals("basic"))
             {
