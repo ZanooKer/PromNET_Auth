@@ -24,7 +24,7 @@ Prometheus_net v.1.3.5 (Because I dev this proj on VS2015)
 
    3.2 Add reference to Prometheus Config : adding below code between 'configuration' outline
    
-      ```javascript
+   ```javascript 
    <configSections>
     <section name="PromSet"
          type="System.Configuration.DictionarySectionHandler"/>
